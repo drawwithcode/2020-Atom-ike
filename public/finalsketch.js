@@ -13,9 +13,14 @@ function newConnection() {
 
 socket.on("mouseBroadcast", otherMouse);
 
+function preload() {
+  
+}
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(9, 14, 36);
+  // background(9, 14, 36);
+
 }
 
 // Callback function called when a new message comes from the server
@@ -45,4 +50,5 @@ function mouseDragged() {
 }
 
 function draw() {
+
 }

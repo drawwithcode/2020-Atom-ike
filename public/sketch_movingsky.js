@@ -1,6 +1,7 @@
 var stars = [];
 var speed;
-let timer = 5
+let timer = 5;
+let myText = "Your wish is\nentering the galaxy";
 
 class Star {
     constructor() {
@@ -19,7 +20,7 @@ class Star {
       }
     }
 
-    show() {
+      show() {
       fill(255);
       noStroke();
 
@@ -37,7 +38,9 @@ class Star {
     }
 }
 function setup() {
-    createCanvas(windowWidth, windowHeight);
+
+  createCanvas(windowWidth, windowHeight);
+
     setTimeout(changeSketch, 5000);
 
     star = new Star();
@@ -58,14 +61,28 @@ function setup() {
 
     }
 }
+
 function draw() {
 
   background(9, 14, 36);
 
+  //titolo
+  push();
+  textAlign(CENTER);
+  textFont("Roboto Mono");
+  textSize(17);
+  fill("white");
+  stroke(0, 14, 36);
+  strokeWeight(3);
+  text(myText, windowWidth / 2, windowHeight / 1.75);
+  pop();
+
+  push();
   textAlign(CENTER, CENTER);
   textFont("Prata");
-    textSize(50);
-    text(timer, width/2, height/2);
+  textSize(45);
+  text(timer, width/2, height/2);
+  pop();
 
     if (frameCount % 60 == 0 && timer > 0) { // if the frameCount is divisible by 60, then a second has passed. it will stop at 0
   timer --;
@@ -81,7 +98,11 @@ function draw() {
     }
 }
 
+
 function changeSketch() {
   window.open('finalindex.html', '_self');
+}
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }

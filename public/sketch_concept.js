@@ -7,10 +7,13 @@ let data = "Welcome to the New Year's sky:\nhere your dreams are carefully\nguar
 // //suono
 let buttonSound;
 
+var backgroundSound;
+
 
 function preload() {
   //suono
   buttonSound = loadSound("./assets/sounds/Sound_effect_1.mp3");
+  backgroundSound = loadSound("./assets/sounds/background_sound.mp3")
 }
 
 function setup() {
@@ -31,7 +34,9 @@ function setup() {
   buttonEnter.mousePressed(playSound);
   pop();
 
-
+    backgroundSound.setVolume(0.10);
+    backgroundSound.play();
+    backgroundSound.loop();
 
 }
 

@@ -4,14 +4,19 @@ let myOtherText = "Be proud of who you are and don't\nbe ashamed of how someone 
 let nSlider;
 let outerRadiusSlider;
 let innerRadiusSlider;
+let buttonSound;
 // let rotationSlider;
 
 function preload() {
-buttonSound = loadSound("./assets/sounds/Sound_effect_1.mp3");
+buttonSound = loadSound("./assets/sounds/symbols_sound.mp3");
 }
+
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+
+  buttonSound.setVolume(0.10);
+  buttonSound.play();
 
   push();
   buttonBack = createButton("BACK");
@@ -31,13 +36,13 @@ function setup() {
   buttonDone.mousePressed(changeSketchTwo);
   pop();
 
-  nSlider = createSlider (4, 20, 5, 1);
+  nSlider = createSlider (4, 20, 4, 1);
   nSlider.position(windowWidth * 7 / 22, windowHeight* 23/33);
   nSlider.size(200);
   outerRadiusSlider = createSlider (25, 100, 100, 1);
   outerRadiusSlider.position(windowWidth * 7 / 22, windowHeight* 25/33);
   outerRadiusSlider.size(200);
-  innerRadiusSlider = createSlider (25, 100, 50, 1);
+  innerRadiusSlider = createSlider (25, 100, 25, 1);
   innerRadiusSlider.position(windowWidth * 7 / 22, windowHeight* 27/33);
   innerRadiusSlider.size(200);
   // rotationSlider = createSlider (0, TAU, 0, PI/6);

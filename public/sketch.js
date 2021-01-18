@@ -18,7 +18,7 @@ function setup() {
   push();
   buttonEnter = createButton("ENTER THE GALAXY");
   buttonEnter.position(windowWidth/2-buttonEnter.width/2, windowHeight*8/9-buttonEnter.height/2);
-  buttonEnter.mousePressed(playSound);
+  buttonEnter.mousePressed(changeSketch);
   pop();
 }
 
@@ -82,18 +82,19 @@ function draw() {
 
 }
 
+function changeSketch() {
+  window.open('concept.html', '_self');
+}
 
 
-
-
-  function playSound() {
-
-  // If the user clicks on the button, play the sound!
-if(buttonSound.isPlaying() == false){
-
-buttonSound.play();
-}   window.open('concept.html', '_self');
-  }
+//   function playSound() {
+//
+//   // If the user clicks on the button, play the sound!
+// if(buttonSound.isPlaying() == false){
+//
+// buttonSound.play();
+// }   window.open('concept.html', '_self');
+//   }
 
 
 function windowResized() {

@@ -2,6 +2,7 @@
 // let myCards = [];
 //testo
 let myText = "Choose your type of wish:";
+
 // // //suono bottone
 // let buttonSound;
 
@@ -20,13 +21,15 @@ let buttonRomance;
 let buttonCloseness;
 
 function preload() {
-  buttonSound = loadSound("./assets/sounds/Sound_effect_1.mp3");
+
+
 }
 
 function setup() {
 
   createCanvas(windowWidth, windowHeight);
   background(9, 14, 36);
+
 
   //autonomy button
   autonomybutton = createImg('./assets/images/autonomy_1.png');

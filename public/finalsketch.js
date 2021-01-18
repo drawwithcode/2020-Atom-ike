@@ -1,6 +1,8 @@
 // Create a new connection using socket.io (imported in index.html)
 let socket = io();
 
+var backgroundSound;
+
 // define the function that will be called on a new newConnection
 socket.on("connect", newConnection);
 
@@ -14,12 +16,17 @@ function newConnection() {
 socket.on("mouseBroadcast", otherMouse);
 
 function preload() {
-  
+  backgroundSound = loadSound("./assets/sounds/background_sound.mp3");
+
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  // background(9, 14, 36);
+  background(9, 14, 36);
+
+  backgroundSound.setVolume(0.10);
+  backgroundSound.play();
+  backgroundSound.loop();
 
 }
 

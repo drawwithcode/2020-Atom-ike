@@ -7,18 +7,19 @@ let data = "Welcome to the New Year's sky:\nhere your dreams are carefully\nguar
 // //suono
 let buttonSound;
 
-var backgroundSound;
 
 
 function preload() {
   //suono
   buttonSound = loadSound("./assets/sounds/Sound_effect_1.mp3");
-  backgroundSound = loadSound("./assets/sounds/background_sound.mp3")
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(9, 14, 36);
+
+  buttonSound.setVolume(0.10);
+  buttonSound.play();
 
 
   //typewriter
@@ -31,12 +32,8 @@ function setup() {
   // buttonEnter.center();
   // buttonEnter.center();
   // buttonEnter.position(0, 0);
-  buttonEnter.mousePressed(playSound);
+  buttonEnter.mousePressed(changeSketch);
   pop();
-
-    backgroundSound.setVolume(0.10);
-    backgroundSound.play();
-    backgroundSound.loop();
 
 }
 
@@ -83,15 +80,19 @@ function typeWriter(sentence, n, x, y, speed) {
   }
 }
 
-function playSound() {
-
-  // If the user clicks on the button, play the sound!
-  if (buttonSound.isPlaying() == false) {
-
-    buttonSound.play();
-  }
+function changeSketch() {
   window.open('symbols.html', '_self');
 }
+
+// function playSound() {
+//
+//   // If the user clicks on the button, play the sound!
+//   if (buttonSound.isPlaying() == false) {
+//
+//     buttonSound.play();
+//   }
+//   window.open('symbols.html', '_self');
+// }
 
 
 function windowResized() {

@@ -19,9 +19,11 @@ let buttonAbundance;
 let buttonSelflove;
 let buttonRomance;
 let buttonCloseness;
+let buttonSound;
 
 function preload() {
-
+  //suono
+  buttonSound = loadSound("./assets/sounds/Sound_effect_1.mp3");
 
 }
 
@@ -29,6 +31,9 @@ function setup() {
 
   createCanvas(windowWidth, windowHeight);
   background(9, 14, 36);
+
+  buttonSound.setVolume(0.50);
+  buttonSound.play();
 
 
   //autonomy button

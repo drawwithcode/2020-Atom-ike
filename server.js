@@ -22,6 +22,12 @@ function newConnection(socket) {
   //when a new connection is created, print its id
   console.log("socket:", socket.id);
 
+  let clientColor = "white";
+
+  socket.emit("color", clientColor);
+  // send the color to all other clients
+  socket.broadcast.emit("newPlayer", clientColor);
+
   //define what to do on different kind of messages
   socket.on("mouse", mouseMessage);
 
@@ -33,5 +39,16 @@ function newConnection(socket) {
     console.log(socket.id, data);
   }
 }
+
+// assign a different color to each client
+// function getRandomColor() {
+//   var letters = "0123456789ABCDEF";
+//   var color = "#";
+//   for (var i = 0; i < 6; i ++) {
+//     color += letters[Math.floor(Math.random() * 16)];
+//   }
+//   return color;
+// }
+
 
 console.log("node server is running");

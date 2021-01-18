@@ -18,7 +18,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   background(9, 14, 36);
 
-  buttonSound.setVolume(0.10);
+  buttonSound.setVolume(0.50);
   buttonSound.play();
 
 

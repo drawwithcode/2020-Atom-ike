@@ -14,7 +14,7 @@ buttonSound = loadSound("./assets/sounds/symbols_sound.mp3");
 function setup() {
   createCanvas(windowWidth, windowHeight);
 
-  buttonSound.setVolume(0.10);
+  buttonSound.setVolume(0.07);
   buttonSound.play();
 
   push();

@@ -1,6 +1,7 @@
 // Create a new connection using socket.io (imported in index.html)
 let socket = io();
 let myColor = "white";
+let buttonBack;
 var backgroundSound;
 
 // define the function that will be called on a new newConnection
@@ -13,15 +14,18 @@ socket.on("newPlayer", newPlayer);
 function newPlayer() {
 // console.log(newPlayerColor);
 push();
-fill(9, 14, 36);
+fill(255, 255, 255, 100);
 rectMode(CENTER);
-noStroke();
-rect(width / 2, height / 10 * 9, width, 50);
+stroke("white");
+strokeWeight(1);
+rect(width / 2, height * 0.95 / 10, 230, 40);
 textFont("Roboto Mono");
-textSize(15);
+textSize(12);
 textAlign(CENTER);
 fill("white");
-text("Another user is making a wish", width / 2, height / 10 * 9);
+noStroke();
+// stroke("white");
+text("Another user is making a wish", width / 2, height / 10);
 pop();
 }
 
@@ -50,6 +54,12 @@ function setup() {
   backgroundSound.setVolume(0.10);
   backgroundSound.play();
   backgroundSound.loop();
+
+  push();
+  buttonBack = createButton("SEND");
+  buttonBack.position(windowWidth/2-buttonBack.width/2, windowHeight*12/14-buttonBack.height/2);
+  buttonBack.mousePressed();
+  pop();
 
 }
 

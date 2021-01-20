@@ -1,5 +1,5 @@
 var stars = [];
-let myText = "Romance";
+let myText = "You wish for Romance";
 let myOtherText = "The right person will make you\nfall in love with yourself too.\nIf you can’t get your lover off your mind,\nthis person is supposed to be\nalways there with you.";
 let nSlider;
 let outerRadiusSlider;

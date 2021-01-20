@@ -4,6 +4,7 @@ let myColor = "white";
 let buttonBack;
 var backgroundSound;
 
+
 // define the function that will be called on a new newConnection
 socket.on("connect", newConnection);
 socket.on("mouseBroadcast", otherMouse);

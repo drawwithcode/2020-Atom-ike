@@ -43,70 +43,70 @@ function setup() {
   autonomybutton.mousePressed(changeSketchOne);
 
   //growth button
-  autonomybutton = createImg('./assets/images/growth_2.png');
-  autonomybutton.size(110, 110);
-  autonomybutton.position(windowWidth * 8 / 22, windowHeight * 4 / 33);
-  autonomybutton.mousePressed(changeSketchTwo);
+  growthbutton = createImg('./assets/images/growth_2.png');
+  growthbutton.size(110, 110);
+  growthbutton.position(windowWidth * 8 / 22, windowHeight * 4 / 33);
+  growthbutton.mousePressed(changeSketchTwo);
 
   //overcoming button
-  autonomybutton = createImg('./assets/images/overcoming_3.png');
-  autonomybutton.size(110, 110);
-  autonomybutton.position(windowWidth * 15 / 22, windowHeight * 4 / 33);
-  autonomybutton.mousePressed(changeSketchThree);
+  overcomingbutton = createImg('./assets/images/overcoming_3.png');
+  overcomingbutton.size(110, 110);
+  overcomingbutton.position(windowWidth * 15 / 22, windowHeight * 4 / 33);
+  overcomingbutton.mousePressed(changeSketchThree);
 
   //discovery button
-  autonomybutton = createImg('./assets/images/discovery_4.png');
-  autonomybutton.size(110, 110);
-  autonomybutton.position(windowWidth * 1 / 22, windowHeight * 11 / 33);
-  autonomybutton.mousePressed(changeSketchFour);
+  discoverybutton = createImg('./assets/images/discovery_4.png');
+  discoverybutton.size(110, 110);
+  discoverybutton.position(windowWidth * 1 / 22, windowHeight * 11 / 33);
+  discoverybutton.mousePressed(changeSketchFour);
 
   //expression button
-  autonomybutton = createImg('./assets/images/expression_5.png');
-  autonomybutton.size(110, 110);
-  autonomybutton.position(windowWidth * 8 / 22, windowHeight * 11 / 33);
-  autonomybutton.mousePressed(changeSketchFive);
+  expressionbutton = createImg('./assets/images/expression_5.png');
+  expressionbutton.size(110, 110);
+  expressionbutton.position(windowWidth * 8 / 22, windowHeight * 11 / 33);
+  expressionbutton.mousePressed(changeSketchFive);
 
   //openness button
-  autonomybutton = createImg('./assets/images/openness_6.png');
-  autonomybutton.size(110, 110);
-  autonomybutton.position(windowWidth * 15 / 22, windowHeight * 11 / 33);
-  autonomybutton.mousePressed(changeSketchSix);
+  opennessbutton = createImg('./assets/images/openness_6.png');
+  opennessbutton.size(110, 110);
+  opennessbutton.position(windowWidth * 15 / 22, windowHeight * 11 / 33);
+  opennessbutton.mousePressed(changeSketchSix);
 
   //balance button
-  autonomybutton = createImg('./assets/images/balance_7.png');
-  autonomybutton.size(110, 110);
-  autonomybutton.position(windowWidth * 1 / 22, windowHeight * 18 / 33);
-  autonomybutton.mousePressed(changeSketchSeven);
+  balancebutton = createImg('./assets/images/balance_7.png');
+  balancebutton.size(110, 110);
+  balancebutton.position(windowWidth * 1 / 22, windowHeight * 18 / 33);
+  balancebutton.mousePressed(changeSketchSeven);
 
   //interaction button
-  autonomybutton = createImg('./assets/images/interaction_8.png');
-  autonomybutton.size(110, 110);
-  autonomybutton.position(windowWidth * 8 / 22, windowHeight * 18 / 33);
-  autonomybutton.mousePressed(changeSketchEight);
+  interactionbutton = createImg('./assets/images/interaction_8.png');
+  interactionbutton.size(110, 110);
+  interactionbutton.position(windowWidth * 8 / 22, windowHeight * 18 / 33);
+  interactionbutton.mousePressed(changeSketchEight);
 
   //abundance button
-  autonomybutton = createImg('./assets/images/abundance_9.png');
-  autonomybutton.size(110, 110);
-  autonomybutton.position(windowWidth * 15 / 22, windowHeight * 18 / 33);
-  autonomybutton.mousePressed(changeSketchNine);
+  abundancebutton = createImg('./assets/images/abundance_9.png');
+  abundancebutton.size(110, 110);
+  abundancebutton.position(windowWidth * 15 / 22, windowHeight * 18 / 33);
+  abundancebutton.mousePressed(changeSketchNine);
 
   //selflove button
-  autonomybutton = createImg('./assets/images/selflove_10.png');
-  autonomybutton.size(110, 110);
-  autonomybutton.position(windowWidth * 1 / 22, windowHeight * 25 / 33);
-  autonomybutton.mousePressed(changeSketchTen);
+  selflovebutton = createImg('./assets/images/selflove_10.png');
+  selflovebutton.size(110, 110);
+  selflovebutton.position(windowWidth * 1 / 22, windowHeight * 25 / 33);
+  selflovebutton.mousePressed(changeSketchTen);
 
   //romance button
-  autonomybutton = createImg('./assets/images/romance_11.png');
-  autonomybutton.size(110, 110);
-  autonomybutton.position(windowWidth * 8 / 22, windowHeight * 25 / 33);
-  autonomybutton.mousePressed(changeSketchEleven);
+  romancebutton = createImg('./assets/images/romance_11.png');
+  romancebutton.size(110, 110);
+  romancebutton.position(windowWidth * 8 / 22, windowHeight * 25 / 33);
+  romancebutton.mousePressed(changeSketchEleven);
 
   //closeness button
-  autonomybutton = createImg('./assets/images/closeness_12.png');
-  autonomybutton.size(110, 110);
-  autonomybutton.position(windowWidth * 15 / 22, windowHeight * 25 / 33);
-  autonomybutton.mousePressed(changeSketchTwelve);
+  closenessbutton = createImg('./assets/images/closeness_12.png');
+  closenessbutton.size(110, 110);
+  closenessbutton.position(windowWidth * 15 / 22, windowHeight * 25 / 33);
+  closenessbutton.mousePressed(changeSketchTwelve);
 
 
 }

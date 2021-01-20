@@ -1,5 +1,5 @@
 var stars = [];
-let myText = "Self Love";
+let myText = "You wish for Self Love";
 let myOtherText = "Be proud of who you are and don't\nbe ashamed of how someone else sees you.\nLearn to love yourself without\nthe love of others: treat yourself as you\nwould treat someone you love.";
 let nSlider;
 let outerRadiusSlider;

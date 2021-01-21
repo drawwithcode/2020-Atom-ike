@@ -19,21 +19,21 @@ socket.on("newPlayer", newPlayer);
 
 
 function newPlayer() {
-// console.log(newPlayerColor);
-push();
-fill(255, 255, 255, 100);
-rectMode(CENTER);
-stroke("white");
-strokeWeight(1);
-rect(width / 2, height * 0.95 / 10, 230, 40);
-textFont("Roboto Mono");
-textSize(12);
-textAlign(CENTER);
-fill("white");
-noStroke();
-// stroke("white");
-text("Another user is making a wish", width / 2, height / 10);
-pop();
+  // console.log(newPlayerColor);
+  push();
+  fill(255, 255, 255, 100);
+  rectMode(CENTER);
+  stroke("white");
+  strokeWeight(1);
+  rect(width / 2, height * 1.2 / 10, 230, 20);
+  textFont("Roboto Mono");
+  textSize(12);
+  textAlign(CENTER);
+  fill("white");
+  noStroke();
+  // stroke("white");
+  text("Another user is making a wish", width / 2, height / 8);
+  pop();
 }
 
 function setColor(assignedColor) {
@@ -65,17 +65,64 @@ function setup() {
   //   size : random(0.5, 1)
   // }
 
+  //title
+  p = createP("Zoom and find your galaxy");
+  p.position(windowWidth / 2 - 100, 0);
+
+  p = createP("Tap on the stars and create a constellation");
+  p.position(windowWidth / 2 - 155, 25);
+
+  //categories
+  p1 = createDiv("Autonomy");
+  p1.position(windowWidth / 2, windowHeight / 2);
+
+  p2 = createDiv("Balance");
+  p2.position(windowWidth / 4, windowHeight / 4.7);
+
+  p3 = createDiv("Expression");
+  p3.position(windowWidth / 10, windowHeight / 3.2);
+
+  p4 = createDiv("Overcoming");
+  p4.position(windowWidth / 6, windowHeight * 5.5 / 8);
+
+  p5 = createDiv("Romance");
+  p5.position(windowWidth * 3 / 4, windowHeight * 2 / 3);
+
+  p6 = createDiv("Self love");
+  p6.position(windowWidth * 4 / 5, windowHeight / 3.6);
+
+  p7 = createDiv("Interaction");
+  p7.position(windowWidth / 2, windowHeight / 3);
+
+  p8 = createDiv("Closeness");
+  p8.position(windowWidth * 3 / 5, windowHeight / 5);
+
+  p9 = createDiv("Abundance");
+  p9.position(windowWidth / 11, windowHeight * 7 / 8);
+
+  p10 = createDiv("Openness");
+  p10.position(windowWidth * 4 / 5, windowHeight * 6.5 / 8);
+
+  p11 = createDiv("Discovery");
+  p11.position(windowWidth * 4 / 5, windowHeight / 2);
+
+  p12 = createDiv("Growth");
+  p12.position(windowWidth / 13, windowHeight / 2);
+
+
+
+
   backgroundSound.setVolume(0.10);
   backgroundSound.play();
   backgroundSound.loop();
 
   push();
   buttonSend = createButton("SEND");
-  buttonSend.position(windowWidth/2-buttonSend.width/2, windowHeight*12/14-buttonSend.height/2);
+  buttonSend.position(windowWidth / 2 - buttonSend.width / 2, windowHeight * 12 / 14 - buttonSend.height / 2);
   // buttonSend.mousePressed(anotherStar);
   pop();
 
-  for (let i = 0; i < width * 0.22; i++) {
+  for (let i = 0; i < 180; i++) {
     stars.push(new Constellation());
   }
 }
@@ -85,7 +132,7 @@ function setup() {
 function otherMouse(data) {
   console.log("received:", data);
   noStroke();
-  fill("red");
+  fill("yellow");
   ellipse(data.x, data.y, 4);
 
 }
@@ -109,30 +156,48 @@ function mouseClicked() {
 }
 
 function draw() {
-  for (let i = 0; i < stars.length; i++) {
-      stars[i].twinkle();
-      stars[i].display();
-    }
 
-//   push();
-//   ellipseMode(CENTER); //Draw stars in the canvas
-//   fill(255, 255, 255, 20);
-//   strokeWeight(0);
-//   pop();
-//
-//
-//   //Draw shooting star
-// push();
-// ellipseMode(CENTER);
-// fill(255, 255, 255, 20);
-// strokeWeight(0);
-// ellipse(star.starX, star.starY, star.size, star.size);
-// star.starX = star.starX+1; //Move shoouting star
-// star.starY = star.starY-1;
-// star.size = star.size + 0.02
-// pop();
- //Decreases the size of shooting star
+  push();
+  for (let i = 0; i < stars.length; i++) {
+    stars[i].twinkle();
+    stars[i].display();
   }
+  pop();
+
+  push();
+  fill(9, 14, 36);
+  noStroke();
+  rectMode(CENTER);
+  rect(windowWidth / 2, windowHeight / 13, 310, 25);
+  pop();
+
+  push();
+  fill(9, 14, 36);
+  noStroke();
+  rectMode(CENTER);
+  rect(windowWidth / 2, windowHeight / 25, 200, 27);
+  pop();
+
+
+  //   push();
+  //   ellipseMode(CENTER); //Draw stars in the canvas
+  //   fill(255, 255, 255, 20);
+  //   strokeWeight(0);
+  //   pop();
+  //
+  //
+  //   //Draw shooting star
+  // push();
+  // ellipseMode(CENTER);
+  // fill(255, 255, 255, 20);
+  // strokeWeight(0);
+  // ellipse(star.starX, star.starY, star.size, star.size);
+  // star.starX = star.starX+1; //Move shoouting star
+  // star.starY = star.starY-1;
+  // star.size = star.size + 0.02
+  // pop();
+  //Decreases the size of shooting star
+}
 //
 //   function anotherStar() {
 //   star = {
@@ -143,25 +208,25 @@ function draw() {
 //   }
 
 
-  function mousePressed() {
-    for (let i = 0; i < stars.length; i++) {
-      stars[i].starClick(mouseX, mouseY);
-      stars[i].lineDraw();
-    }
+function mousePressed() {
+  for (let i = 0; i < stars.length; i++) {
+    stars[i].starClick(mouseX, mouseY);
+    stars[i].lineDraw();
   }
+}
 
-  class Constellation {
+class Constellation {
   constructor() {
     this.x = random(width);
     this.y = random(height);
-    this.d = random(1, 3);
+    this.d = random(1.8, 3.5);
     this.clicked = false;
   }
 
   display() {
     noStroke();
     if (this.clicked == true) {
-      ellipse(this.x, this.y, this.d + 4);
+      ellipse(this.x, this.y, this.d + 3.5);
     } else {
       ellipse(this.x, this.y, this.d);
     }
@@ -189,10 +254,10 @@ function draw() {
       lines.splice(0, 2);
     }
 
-  // let message = {
-  //   x: this.x,
-  //   y: this.y,
-  // };
-  //   socket.emit("mouse", message);
+    // let message = {
+    //   x: this.x,
+    //   y: this.y,
+    // };
+    //   socket.emit("mouse", message);
   }
 }

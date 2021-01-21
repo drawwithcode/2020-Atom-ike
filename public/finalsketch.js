@@ -32,7 +32,7 @@ function newPlayer() {
   fill("white");
   noStroke();
   // stroke("white");
-  text("Another user is making a wish", width / 2, height / 8);
+  text("Someone else is making a wish", width / 2, height / 8);
   pop();
 }
 

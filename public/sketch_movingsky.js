@@ -2,6 +2,13 @@ var stars = [];
 var speed;
 let timer = 5;
 let myText = "Your wish is\nentering the galaxy";
+let buttonSound;
+
+
+function preload() {
+  buttonSound = loadSound("./assets/sounds/Sound_effect_1.mp3");
+}
+
 
 class Star {
     constructor() {
@@ -38,6 +45,9 @@ class Star {
     }
 }
 function setup() {
+
+  buttonSound.setVolume(0.50);
+  buttonSound.play();
 
   createCanvas(windowWidth, windowHeight);
 

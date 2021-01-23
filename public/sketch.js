@@ -22,7 +22,7 @@ var maxDiameter;
 var theta;
 
 //mobile check sketch
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+if (window.orientation > -1) {
 
 
   function preload() {

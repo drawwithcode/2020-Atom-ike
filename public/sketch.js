@@ -234,7 +234,6 @@ if (checkIfMobile()) {
 
     theta += .01;
 
-
   }
 
 

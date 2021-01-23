@@ -2,7 +2,7 @@
 var stars = [];
 //testi
 let myText = "You wish for Self Love";
-let myOtherText = "Be proud of who you are and don't\nbe ashamed of how someone else sees you.\nLearn to love yourself without\nthe love of others: treat yourself as you\nwould treat someone you love.";
+let myOtherText = "Be proud of who you are and don't\nbe ashamed of how someone else sees you.\nLearn to love yourself without\nthe love of others: treat yourself\nas you would treat someone you love.";
 //sliders
 let nSlider;
 let outerRadiusSlider;

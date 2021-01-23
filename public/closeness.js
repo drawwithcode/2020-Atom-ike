@@ -2,7 +2,7 @@
 var stars = [];
 //testi
 let myText = "You wish for Closeness";
-let myOtherText = "Your soul is attracted to people\nthe same way flowers are attracted\nto the sun, surround yourself only\nwith those who want to see you grow.";
+let myOtherText = "Your soul is attracted to people\nthe same way flowers are attracted\nto the sun: surround yourself only\nwith those who want to see you grow.";
 //sliders
 let nSlider;
 let outerRadiusSlider;

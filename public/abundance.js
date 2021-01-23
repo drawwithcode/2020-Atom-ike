@@ -2,7 +2,7 @@
 var stars = [];
 //testi
 let myText = "You wish for Abundance";
-let myOtherText = "Abundance comes from within.\nIt comes from thought, intention,\nattention and expectation. As you focus\non abundance you already have,\nyou naturally attract more and more.";
+let myOtherText = "Abundance comes from within:\nit comes from thought, intention,\nattention and expectation.\nAs you focus on abundance you already\nhave, you naturally attract\nmore and more.";
 //slider stelle npoints, radius
 let nSlider;
 let outerRadiusSlider;

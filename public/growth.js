@@ -2,7 +2,7 @@
 var stars = [];
 //testi
 let myText = "You wish for Growth";
-let myOtherText = "Allow yourself to grow: do your daily\npractice and habits and cultivate\na kind hearth. Abandon impatience\nand instead be content creating the\ncauses for goodness.\nSoon you will se the results.";
+let myOtherText = "Allow yourself to grow: do your daily\npractice, habits and cultivate\na kind heart. Abandon impatience\nand instead be content creating the\ncauses for goodness.\nSoon you will see the results.";
 //sliders
 let nSlider;
 let outerRadiusSlider;

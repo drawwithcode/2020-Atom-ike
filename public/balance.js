@@ -2,7 +2,7 @@
 var stars = [];
 //testi
 let myText = "You wish for Balance";
-let myOtherText = "Balance is the key to everything.\nWhat we do, think, say, eat, fell,\nthey all require awareness\nand through this awareness we can grow.\nCreate your own safe balance.";
+let myOtherText = "Balance is the key to everything.\nWhat we do, think, say, eat, feel,\nthey all require awareness\nand through it we can grow.\nCreate your own safe balance.";
 //sliders
 let nSlider;
 let outerRadiusSlider;

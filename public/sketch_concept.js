@@ -2,7 +2,7 @@
 let buttonEnter;
 
 //concept spiegazione
-let data = "Welcome to the New Year's sky,\na place for introspection, where\nyour dreams are guarded.\n\nYou are not the only one who has\nhopes and goals for your future\nself: interact with the others\nby creating links between\nthe stars.\n\nWhich are your desires?\nPick one and express it!\n\nBut remember...\n\ndon't say it out loud,\nor it won't come true! \n\n\nAre your ready?";
+let data = "Welcome to the New Year's sky,\na place for introspection,\nwhere your dreams are\ncarefully guarded.\n\nYou are not the only one who has\nhopes and goals for your future\nself: interact with the others\nby creating links between\nthe stars.\n\nWhich are your desires?\nPick one and express it!\n\nBut remember...\n\ndon't say it out loud,\nor it won't come true! \n\n\nAre your ready?";
 
 // //suono
 let buttonSound;

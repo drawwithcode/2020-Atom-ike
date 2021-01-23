@@ -2,7 +2,7 @@
 var stars = [];
 //testi
 let myText = "You wish for Interaction";
-let myOtherText = "Recognize that every interaction\nyou have is an opportunity\nto make positive impact to others.\nWe rise by lifting the others.";
+let myOtherText = "Recognize that every interaction\nyou have is an opportunity to make\na positive impact to someone else.\nWe rise by lifting the others.";
 //sliders
 let nSlider;
 let outerRadiusSlider;

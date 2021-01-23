@@ -57,8 +57,8 @@ function setup() {
   background(9, 14, 36);
 
   //paragraphs
-  p = createP("Zoom in to find your galaxy");
-  p.position(windowWidth / 2 - 100, windowHeight * 6 / 7);
+  // p = createP("Zoom in to find your galaxy");
+  // p.position(windowWidth / 2 - 100, windowHeight * 6 / 7);
 
   p = createP("Tap on the sky to create");
   p.position(windowWidth / 2 - 90, windowHeight * 6.3 / 7);
@@ -68,10 +68,10 @@ function setup() {
 
   //categories
   p1 = createDiv("Autonomy");
-  p1.position(windowWidth / 2, windowHeight / 1.9);
+  p1.position(windowWidth / 2.4, windowHeight / 1.9);
 
   p2 = createDiv("Balance");
-  p2.position(windowWidth / 4, windowHeight / 6);
+  p2.position(windowWidth / 4, windowHeight / 5.9);
 
   p3 = createDiv("Expression");
   p3.position(windowWidth / 10, windowHeight / 3.2);
@@ -86,19 +86,19 @@ function setup() {
   p6.position(windowWidth * 4 / 5, windowHeight / 3.6);
 
   p7 = createDiv("Interaction");
-  p7.position(windowWidth / 2, windowHeight / 3);
+  p7.position(windowWidth / 2, windowHeight / 2.9);
 
   p8 = createDiv("Closeness");
-  p8.position(windowWidth * 3 / 5, windowHeight / 5);
+  p8.position(windowWidth * 3 / 5, windowHeight / 6.1);
 
   p9 = createDiv("Abundance");
-  p9.position(windowWidth * 0.3, windowHeight * 3/4);
+  p9.position(windowWidth * 0.2, windowHeight * 4/5);
 
   p10 = createDiv("Openness");
   p10.position(windowWidth * 3.5 / 5, windowHeight * 6.5 / 8);
 
   p11 = createDiv("Discovery");
-  p11.position(windowWidth * 4 / 5, windowHeight / 2);
+  p11.position(windowWidth * 3.9 / 5, windowHeight / 2.2);
 
   p12 = createDiv("Growth");
   p12.position(windowWidth / 13, windowHeight / 2.2);

@@ -31,6 +31,7 @@ function newConnection(socket) {
   //define what to do on different kind of messages
   socket.on("mouse", mouseMessage);
 
+
   // create the mouseMessage function
   function mouseMessage(data) {
     // send the data to all the other clients

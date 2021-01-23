@@ -1,17 +1,17 @@
 // Create a new connection using socket.io (imported in index.html)
 let socket = io();
 let myColor = "white";
-let buttonSend;
+// let buttonSend;
 var backgroundSound;
 
 let stars = [];
 // let lines = [];
 
-
-let currX;
-let currY;
-let prevX;
-let prevY;
+//
+var currX ;
+var currY ;
+var prevX = -1;
+var prevY = -1;
 
 // var star;
 
@@ -122,11 +122,11 @@ function setup() {
   backgroundSound.play();
   backgroundSound.loop();
 
-  push();
-  buttonSend = createButton("SEND");
-  buttonSend.position(windowWidth / 2 - buttonSend.width / 2, windowHeight * 12 / 14 - buttonSend.height / 2);
-  // buttonSend.mousePressed(anotherStar);
-  pop();
+  // push();
+  // buttonSend = createButton("SEND");
+  // buttonSend.position(windowWidth / 2 - buttonSend.width / 2, windowHeight * 12 / 14 - buttonSend.height / 2);
+  // // buttonSend.mousePressed(anotherStar);
+  // pop();
 
   for (let i = 0; i < 180; i++) {
     stars.push(new Constellation());
@@ -135,66 +135,212 @@ function setup() {
 
 // Callback function called when a new message comes from the server
 // Data parameters will contain the received data
+
 function otherMouse(data) {
   console.log("received:", data);
 
-push();
-strokeWeight(0.5);
-stroke("yellow");
-line(data.x, data.y, data.px, data.py);
-pop();
-//
-push();
-strokeWeight(4);
-stroke("yellow");
-point(data.x, data.y);
-pop();
+  // var cx = data.x;
+  // var cy = data.y;
+  // var px = data.x2;
+  // var py = data.y2;
 
-// prevX = mouseX;
-// prevY = mouseY;
 
-// data.px = data.x;
-// data.py = data.y;
+
+  // data.x = data.x2;
+  // data.y = data.y2;
+
+
+  push();
+  strokeWeight(4);
+  stroke("yellow");
+  point(data.x, data.y);
+  pop();
+
+  push();
+  strokeWeight(0.5);
+  stroke("yellow");
+  line(data.x, data.y, data.x2, data.y2);
+  pop();
+  //
+
+
+    // prevX = currX;
+    // prevY = currY;
+
+
+
+  // prevX = mouseX;
+  // prevY = mouseY;
+  //
+
 
 }
 
+// function mousePressed() {
+//   console.log("sending: ", mouseX, mouseY, prevX, prevY);
+//
+//   push();
+//   strokeWeight(4);
+//   stroke(255);
+//   point(mouseX, mouseY);
+//   pop();
+//
+// push();
+// strokeWeight(0.5);
+// stroke(255);
+// // line(mouseX, mouseY, prevX, prevY);
+// line(mouseX, mouseY, prevX, prevY);
+// pop();
+//
+// // push();
+// // strokeWeight(4);
+// // stroke(255);
+// // point(mouseX, mouseY);
+// // pop();
+//
+// prevX = mouseX;
+// prevY = mouseY;
+//
+//   // noStroke();
+//   // fill(255);
+//   // ellipse(mouseX, mouseY, 4);
+//
+//
+//   // create an object containing the mouse position
+//
+//   let message = {
+//     x: mouseX - prevX,
+//     y: mouseY - prevY,
+//     x2: prevX,
+//     y2: prevY,
+//
+//     // ln: lines,
+//     // st: stars,
+//   };
+//   // send the object to server,
+//   // tag it as "mouse" event
+//   socket.emit("mouse", message);
+//
+//
+// }
+
 function mouseClicked() {
-  console.log("sending: ", mouseX, mouseY, prevX, prevY);
+  console.log("sending: ", currX, currY, prevX, prevY);
+
+  // prevX = currX;
+  // prevY = currY;
+
+  currX = mouseX;
+  currY = mouseY;
 
 
-push();
-strokeWeight(0.5);
-stroke(255);
-line(mouseX, mouseY, prevX, prevY);
-pop();
 
-push();
-strokeWeight(4);
-stroke(255);
-point(mouseX, mouseY);
-pop();
+  push();
+  strokeWeight(4);
+  stroke(255);
+  point(currX, currY);
+  pop();
 
-prevX = mouseX;
-prevY = mouseY;
+
+  strokeWeight(0.5);
+  stroke(255);
+  // line(mouseX, mouseY, prevX, prevY);
+ var message;
+
+  if (prevX == -1) {
+   line(currX, currY, currX, currY);
+
+   let message = {
+     x: currX,
+     y: currY,
+     x2: currX,
+     y2: currY,
+   };
+  }
+
+  else {
+    line(currX, currY, prevX, prevY);
+
+    let message = {
+      x: currX,
+      y: currY,
+      x2: prevX,
+      y2: prevY,
+    };
+
+      socket.emit("mouse", message);
+  }
+
+
+  // send the object to server,
+  // tag it as "mouse" event
+  // socket.emit("mouse", message);
+
+  prevX = currX;
+  prevY = currY;
+
+
+
+  // push();
+  // strokeWeight(4);
+  // stroke(255);
+  // point(mouseX, mouseY);
+  // pop();
+
+  // prevX = currX;
+  // prevY = currY;
+
+
+
   // noStroke();
   // fill(255);
   // ellipse(mouseX, mouseY, 4);
 
 
   // create an object containing the mouse position
-  let message = {
-    x: mouseX,
-    y: mouseY,
-    x2: prevX,
-    y2: prevY,
-    // ln: lines,
-    // st: stars,
-  };
-  // send the object to server,
-  // tag it as "mouse" event
-  socket.emit("mouse", message);
+
+  // let message = {
+  //   x: (currX + prevX),
+  //   y: (currY + prevY),
+  //   x2: prevX,
+  //   y2: prevY,
+  //
+  //   // ln: lines,
+  //   // st: stars,
+  // };
+  // // send the object to server,
+  // // tag it as "mouse" event
+  // socket.emit("mouse", message);
+
 
 }
+
+// function mousePressed() {
+//   console.log("sending: ", mouseX, mouseY, prevX, prevY);
+//
+//
+// push();
+// strokeWeight(4);
+// stroke(255);
+// point(mouseX, mouseY);
+// pop();
+//
+//
+//
+//
+//   // create an object containing the mouse position
+//   let message = {
+//     x: mouseX,
+//     y: mouseY,
+//
+//     // ln: lines,
+//     // st: stars,
+//   };
+//   // send the object to server,
+//   // tag it as "mouse" event
+//   socket.emit("mouse", message);
+//
+// }
 
 function draw() {
 
@@ -252,7 +398,7 @@ class Constellation {
   constructor() {
     this.x = random(width);
     this.y = random(height);
-    this.d = random(1.8, 3.5);
+    this.d = random(0.8, 1.8);
     this.clicked = false;
   }
 
@@ -287,10 +433,10 @@ class Constellation {
   //     lines.splice(0, 2);
   //   }
   // }
-    // let message = {
-    //   x: this.x,
-    //   y: this.y,
-    // };
-    //   socket.emit("mouse", message);
+  // let message = {
+  //   x: this.x,
+  //   y: this.y,
+  // };
+  //   socket.emit("mouse", message);
 
 }

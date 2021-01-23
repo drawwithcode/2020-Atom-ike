@@ -1,10 +1,5 @@
-// classe cards
-// let myCards = [];
 //testo
 let myText = "Choose your type of wish:";
-
-// // //suono bottone
-// let buttonSound;
 
 //bottoni
 let buttonAutonomy;
@@ -22,9 +17,9 @@ let buttonCloseness;
 let buttonSound;
 
 function preload() {
+
   //suono
   buttonSound = loadSound("./assets/sounds/Sound_effect_1.mp3");
-
 }
 
 function setup() {
@@ -32,9 +27,11 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   background(9, 14, 36);
 
+  //suono
   buttonSound.setVolume(0.50);
   buttonSound.play();
 
+  //_____________________________
 
   //autonomy button
   autonomybutton = createImg('./assets/images/autonomy_1.png');
@@ -107,13 +104,10 @@ function setup() {
   closenessbutton.size(110, 110);
   closenessbutton.position(windowWidth * 15 / 22, windowHeight * 25 / 33);
   closenessbutton.mousePressed(changeSketchTwelve);
-
-
 }
 
 
 function draw() {
-
 
   push();
   fill(9, 14, 36);
@@ -135,67 +129,7 @@ function draw() {
 
 }
 
-//   //classe
-//   buildCards();
-//   for (i = 0; i <= myCards.length; i++) {
-//     myCards[i].display();
-//   }
-// }
-
-// function buildCards() {
-//
-//   //cards
-//   Autonomy = new Card(windowWidth * 1 / 22, windowHeight * 4 / 33, './assets/images/autonomy_1.png');
-//   myCards.push(Autonomy);
-//   Growth = new Card(windowWidth * 8 / 22, windowHeight * 4 / 33, './assets/images/growth_2.png');
-//   myCards.push(Growth);
-//   Overcoming = new Card(windowWidth * 15 / 22, windowHeight * 4 / 33, './assets/images/overcoming_3.png');
-//   myCards.push(Overcoming);
-//   Discovery = new Card(windowWidth * 1 / 22, windowHeight * 11 / 33, './assets/images/discovery_4.png');
-//   myCards.push(Discovery);
-//   Expression = new Card(windowWidth * 8 / 22, windowHeight * 11 / 33, './assets/images/expression_5.png');
-//   myCards.push(Expression);
-//   Openness = new Card(windowWidth * 15 / 22, windowHeight * 11 / 33, './assets/images/openness_6.png');
-//   myCards.push(Openness);
-//   Balance = new Card(windowWidth * 1 / 22, windowHeight * 18 / 33, './assets/images/balance_7.png');
-//   myCards.push(Balance);
-//   Interaction = new Card(windowWidth * 8 / 22, windowHeight * 18 / 33, './assets/images/interaction_8.png');
-//   myCards.push(Interaction);
-//   Abundance = new Card(windowWidth * 15 / 22, windowHeight * 18 / 33, './assets/images/abundance_9.png');
-//   myCards.push(Abundance);
-//   Selflove = new Card(windowWidth * 1 / 22, windowHeight * 25 / 33, './assets/images/selflove_10.png');
-//   myCards.push(Selflove);
-//   Romance = new Card(windowWidth * 8 / 22, windowHeight * 25 / 33, './assets/images/romance_11.png');
-//   myCards.push(Romance);
-//   Closeness = new Card(windowWidth * 15 / 22, windowHeight * 25 / 33, './assets/images/closeness_12.png');
-//   myCards.push(Closeness);
-//
-// }
-//
-// //classe
-// function Card(xpos, ypos, card) {
-//   this.x = xpos;
-//   this.y = ypos;
-//   this.card = card;
-//
-//
-//   this.display = function() {
-//     button = createImg(this.card);
-//     button.size(60 * 1.8, 60 * 1.8);
-//     button.position(this.x, this.y);
-//     noFill();
-//     noStroke();
-//     rect(this.x + 70, this.y + 50);
-//   }
-//
-//   this.clicked = function(){
-//     var d = dist(mouseX, mouseY, this.x+55, this.y+50);
-//     if (d<65){
-//       this.th.play();
-//     }
-//   }
-// }
-
+//categories pages
 
 function changeSketchOne() {
   window.open('autonomy.html', '_self');

@@ -235,8 +235,6 @@ if (checkIfMobile()) {
     theta += .01;
 
   }
-
-
   function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
   }

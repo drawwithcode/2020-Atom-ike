@@ -22,7 +22,8 @@ var maxDiameter;
 var theta;
 
 //mobile check sketch
-if (window.orientation > -1) {
+
+if (navigator.userAgent.indexOf('IEMobile') !== -1) {
 
 
   function preload() {
@@ -210,7 +211,7 @@ if (window.orientation > -1) {
 
     // testo browser
     push();
-    fill("#dddddb");
+    fill(255, 255, 255);
     stroke(9, 14, 36);
     strokeWeight(1.5);
     textSize(15);

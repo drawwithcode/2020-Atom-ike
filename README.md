@@ -32,8 +32,9 @@ Be sure to have node installed: https://nodejs.org/
 4. [Coding challenges](#coding-challenges) <br>
 5. [References](#references) <br>
 6. [Credits](#credits) <br>
-7. [Team members](#team-members) <br>
-8. [Course](#course) <br>
+7. [Video demo](#video-demo) <br>
+8. [Team members](#team-members) <br>
+9. [Course](#course) <br>
 
 
 
@@ -80,7 +81,7 @@ Here the twelve symbols represent the common traits of the users’ wishes. The 
 
 ### Chosen card page
 <p align="center">
-  <img src="images/sliders.gif" width="700" />
+  <img src="images/sliders.gif" width="200" />
 </p>
 
  Each symbol of the previous page reveals a meaningful message for the user depending on the category chosen. In this page everyone can customize their own star by moving three sliders to change the number of points and the inner and outer radius. In the lower part of the screen there are three buttons: "BACK" allows to go back to the "Cards" page, "SAVE" enables the download of a .png file of the customized card to always remind you your goals, "DONE" gives you the access to the following page. <br>
@@ -92,11 +93,11 @@ Here the twelve symbols represent the common traits of the users’ wishes. The 
 
 ### Interactive experience
 <p align="center">
-  <img src="images/interaction1.gif" width="700" />
+  <img src="images/interaction1.gif" width="200" />
 </p>
 
 <p align="center">
-  <img src="images/interaction2.gif" width="700" />
+  <img src="images/interaction2.gif" width="200" />
 </p>
 
 
@@ -131,6 +132,11 @@ The interaction between users takes place in the last page, a virtual collective
 ## References
 
 ## Credits
+
+## Video demo
+<p align="center">
+  <img src="images/videodemo.png" width="700" />
+</p>
 
 ## Team members
 <p align="center">

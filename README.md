@@ -9,7 +9,9 @@ Be sure to have node installed: https://nodejs.org/
 * run local server: `node server.js`
 
 
-![Logo](images/logo.gif)
+<p align="center">
+  <img src="images/logo.gif" width="700" />
+</p>
 
 ### Table of Contents
 0. [Introduction](#introduction) <br>

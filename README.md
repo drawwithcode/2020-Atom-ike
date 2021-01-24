@@ -92,11 +92,11 @@ Here the twelve symbols represent the common traits of the users’ wishes. The 
 </p>
 
 ### Interactive experience
-<p align="center">
+<p align="left">
   <img src="images/interaction1.gif" width="200" />
 </p>
 
-<p align="center">
+<p align="right">
   <img src="images/interaction2.gif" width="200" />
 </p>
 
@@ -135,7 +135,7 @@ The interaction between users takes place in the last page, a virtual collective
 
 ## Video demo
 <p align="center">
-  <img src="images/videodemo.png" width="700" />
+  <img src="images/videodemo.mp4" width="700" />
 </p>
 
 ## Team members

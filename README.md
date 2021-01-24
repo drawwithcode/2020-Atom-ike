@@ -25,8 +25,6 @@
 8. [Team members](#team-members) <br>
 9. [Course](#course) <br>
 
-
-
 ## Introduction
 2020 was an unfortunate year, therefore the concept is to wish everyone to success in the New Year and to achieve their desires and goals. The meaning is to create a brighter virtual “sky”, which represents the 2021, since 2020’s sky wasn’t so bright.
 The title “De-siderium” comes from a Latin term “de” + “siderum,a”. It literally means desire/wishes, but it is also related to the “stars”.

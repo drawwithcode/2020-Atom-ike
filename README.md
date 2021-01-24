@@ -90,6 +90,8 @@ Here the twelve symbols represent the common traits of the users’ wishes. The 
   <img src="images/5-mockup.png" width="700" />
 </p>
 
+This is a page between the solo and the interactive experience: a five seconds countdown and a "tunnel of stars" lead the user to the final page.
+
 ### Interactive experience
 <p float="left" align="center">
    <img src="images/interaction1.gif" width="200">     
@@ -124,8 +126,28 @@ There are three kinds of sounds. The first is a short sound effect for all the b
 ## Coding challenges
 
 ## References
+[Co--Star Astrology App](https://www.costarastrology.com/) &
+[Galaxy of covers](https://galaxy-of-covers.interactivethings.io/) -
+The main inspirations for De-siderium, graphic-wise, were these two projects. <br>
 
 ## Credits
+[P5js](https://p5js.org/) -
+P5 JavaScript library was used to develop the WebApp <br>
+
+[P5.sound](https://p5js.org/reference/#/libraries/p5.sound) -
+The p5.sound library allowed to add sound effects to the project. <br>
+
+[Bensound](https://www.bensound.com/royalty-free-music/track/relaxing) -
+Bensound is the source for the music used in the interactive part of the project. <br>
+
+[Freesound](https://freesound.org/) -
+Freesound is the source for the sound effects used for the buttons. <br>
+
+[Google Fonts](https://fonts.google.com) -
+Google Fonts is the source for the fonts used in the project. <br>
+
+[Heroku](https://www.heroku.com/) -
+The cloud platform we used to publish the website, through GitHub. <br>
 
 ## Video demo
 [Video demo](https://drive.google.com/file/d/13u6w05VsdSseEWKRtU0yNKFHseeW7-By/view?usp=sharing) <br>

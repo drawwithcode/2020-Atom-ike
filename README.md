@@ -15,11 +15,9 @@ Be sure to have node installed: https://nodejs.org/
 
 ### Table of Contents
 0. [Introduction](#introduction) <br>
-1. [The project](#the-project) <br>
-  1a. [Idea](#idea) <br>
-  1b. [Goals](#goals) <br>
-  1c. [Context](#context) <br>
-  1d. [Device](#device) <br>
+1. [Aim of the project](#aim-of-the-project) <br>
+  1a. [Goals](#goals) <br>
+  1b. [Context of use and device](#context-of-use-and-device) <br>
 2. [Architecture](#architecture) <br>
 3. [Design](#design) <br>
   3a. [Graphic aspects](#graphic-aspects) <br>
@@ -40,4 +38,13 @@ The title “De-siderium” comes from a Latin term “de” + “siderum,a”. 
 
 KEYWORDS: TRACE, SHARING MULTI-SENSORY EXPERIENCE, NETWORK. <br>
 
-## The project
+## Aim of the project
+The aim of the project is to create a collaborative experience where people can make a wish: each one will become a star and will be part of a bright sky. The desires will be metaphorically sent to the sky and the people can interact with other users by drawing a constellation and see the others one. <br>
+
+### Goals
+The goal is to make people able to wish what they want to reach in 2021, giving them a good omen and hope. The tradition says that a wish will never come true if it will be said out loud. So the users have to define their desires and define within one of the twelve categories proposed. After the choice the users will read an auspicious message related to their wishes and can customize the star that appears on the screen. At the end everyone will arrive in a sky full of stars where people can interact by creating constellations in the part of the sky where their category is placed. The will is to make people reflect about the sense of community that unifies us, focusing on the idea that the wishes generally expressed have something in common. <br>
+
+### Context of use and device
+The project is designed to be used every time someone reflects on a personal achievement and wants to visualize it in a metaphorical way. To be more easily accessible and enjoyable the app is developed for mobile devices.
+
+## Architecture

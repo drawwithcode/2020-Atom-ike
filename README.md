@@ -26,19 +26,17 @@
 9. [Course](#course) <br>
 
 ## Introduction
-2020 was an unfortunate year, therefore the concept is to wish everyone to success in the New Year and to achieve their desires and goals. The meaning is to create a brighter virtual “sky”, which represents the 2021, since 2020’s sky wasn’t so bright.
-The title “De-siderium” comes from a Latin term “de” + “siderum,a”. It literally means desire/wishes, but it is also related to the “stars”.
-
-KEYWORDS: TRACE, SHARING MULTI-SENSORY EXPERIENCE, NETWORK. <br>
+During last year everyone's wishes have been put on hold, therefore the concept is to wish everyone to success in the New Year and to achieve their desires and goals. The meaning is to create a brighter virtual “sky”, which represents 2021, since 2020’s sky wasn’t so bright.
+The title “De-siderium” comes from a Latin term “de” + “siderum, a” that literally means desire/wishes, but it is also related to the idea of coming from the “stars”. Indeed the stars are a recurring element in the project. <br>
 
 ## Aim of the project
-The aim of the project is to create a collaborative experience where people can make a wish: each one will become a star and will be part of a bright sky. The desires will be metaphorically sent to the sky and the people can interact with other users by drawing a constellation and see the others one. <br>
+The aim of the project is to create a collaborative experience where people can make a wish. The project consists in a solo part in which the user can mentally express a wish and a collective part in which the users all together interact by drawing a constellation and see the others' ones. <br>
 
 ### Goals
-The goal is to make people able to wish what they want to reach in 2021, giving them a good omen and hope. The tradition says that a wish will never come true if it will be said out loud. So the users have to define their desires and define within one of the twelve categories proposed. After the choice the users will read an auspicious message related to their wishes and can customize the star that appears on the screen. At the end everyone will arrive in a sky full of stars where people can interact by creating constellations in the part of the sky where their category is placed. The will is to make people reflect about the sense of community that unifies us, focusing on the idea that the wishes generally expressed have something in common. <br>
+The goal is to make people able to wish what they want to reach in 2021, giving a good omen and sense of hope. The tradition says that a wish will never come true if it will be said out loud. So the user has to define their desire and choose the category to which it refers. After the choice the user will read an inspirational message and can customize the star that appears on the screen. After the solo experience, at the end, people can interact by creating constellations in the part of the sky where their category name is placed. The will is to make people reflect about the sense of community that unifies us, focusing on the idea that the wishes usually expressed have something in common. <br>
 
 ### Context of use and device
-The project is designed to be used every time someone reflects on a personal achievement and wants to visualize it in a metaphorical way. To be more easily accessible and enjoyable the app is developed for mobile devices. <br>
+The project is designed to be used every time someone wants to reflect on a personal achievement and wants to visualize it in a metaphorical way. To be more easily accessible and enjoyable the WebApp is developed for mobile devices. <br>
 
 ## Architecture
 <p align="center">
@@ -50,28 +48,28 @@ The project is designed to be used every time someone reflects on a personal ach
   <img src="images/1-mockup.png" width="700" />
 </p>
 
-The first interface that appears when a user access to the app is made from: the title of the project, “De-siderium”, placed in the middle of the page; a star’s animation, above the title; a generative background composed by a night sky and a shooting stars; a button, in the lower part of the screen, which allows to enter the next page. <br>
+The first interface that appears when a user accesses to the WebApp is made of: the title of the project, “De-siderium”, placed in the middle of the page; a star animation above the title; a generative background composed by a night sky and shooting stars; a button, in the lower part of the screen, which allows to enter the next page. <br>
 
 ### Welcome page
 <p align="center">
   <img src="images/2-mockup.png" width="700" />
 </p>
 
-In this page, a typewriter message comes up explaining some informations about the project. A button, in the lower part of the screen, allows to enter the next page. <br>
+In this page a "typewriter" message comes up explaining the main aspects about the project. A button, in the lower part of the screen, allows to enter the next page. <br>
 
 ### "Cards" page
 <p align="center">
   <img src="images/3-mockup.png" width="700" />
 </p>
 
-Here the twelve symbols represent the common traits of the users’ wishes. The desire won’t be written, but just symbolized by an icon, following the tradition of keeping secret your wish to make it come true. Each card is a button that allows to go ahead in the next step and the user has to choose one of them. <br>
+The twelve symbols here represent the common traits of the wishes. The desire expressed by the user won’t be written, but just symbolized by an icon, following the tradition of keeping secret your wish to make it come true. Each card is a button that allows to go ahead in the next step and the user has to choose just one of them. <br>
 
 ### Chosen card page
 <p align="center">
   <img src="images/sliders.gif" width="200" />
 </p>
 
- Each symbol of the previous page reveals a meaningful message for the user depending on the category chosen. In this page everyone can customize their own star by moving three sliders to change the number of points and the inner and outer radius. In the lower part of the screen there are three buttons: "BACK" allows to go back to the "Cards" page, "SAVE" enables the download of a .png file of the customized card to always remind you your goals, "DONE" gives you the access to the following page. <br>
+ Each symbol of the previous page reveals a meaningful message for the user depending on the category chosen. In this page everyone can customize their own star by moving three sliders to change the number of points and the inner and outer radius. In the lower part of the screen there are three buttons: "BACK" allows to go back to the "Cards" page and re-choose another category, "SAVE" enables the download of a .png file of the customized card to always remind goals, "DONE" gives the access to the following page. <br>
 
 ### Transitioning page
 <p align="center">
@@ -86,33 +84,33 @@ This is a page between the solo and the interactive experience: a five seconds c
    <img src="images/interaction2.gif" width="200">
 </p>
 
-The interaction between users takes place in the last page, a virtual collective space where people can simultaneously draw the constellations in their specific category in white color. The users can also see others creations in light blue. <br>
+The interaction between users takes place in the last page, a virtual collective space in which people can simultaneously draw constellations in their specific category in white color. Users can also see others' creations in light blue. <br>
 
 ## Design challenges
 <p align="center">
   <img src="images/symbols.png" width="700" />
 </p>
 
-The design choice reflects a simple and essential mood to create a relaxing and meditative ambient that reminds a night sky. Moreover, the design is intuitive to create an easy user experience. <br>
+The design choices reflect a simple and essential mood to create a relaxing and meditative atmosphere that reminds a night sky. Moreover, the design is intuitive to create a clear user experience. <br>
 
 ### Graphic aspects
 <p align="center">
   <img src="images/colors.png" width="700" />
 </p>
 
-The most used colors in the whole app are two shades of blue and white. The other colors are related to the twelve categories and they define the customized stars. The categories which have a similar meaning have different intensity shades of the same color.
+The most used colors in the whole app are two shades of blue and white. The other colors are related to the twelve categories and they define the customized stars. The categories which have a similar meaning have different intensity of the same shade.
 
 <p align="center">
   <img src="images/fonts.png" width="700" />
 </p>
 
-There are two fonts that has different usages. "Prata" is used for the logo, the all titles and the meaningful messages. "Roboto mono" instead defines all the others secondary texts, such as buttons and instructions for the user. <br>
+There are two fonts that have different usages. "Prata", a serif elegant font, is used for the logo, for the all titles and for the meaningful messages. Instead "Roboto mono", a more simple sans serif font, defines all the secondary texts, such as buttons and instructions for the user. <br>
 
 ### Sound aspects
-There are three kinds of sounds. The first is a short sound effect for all the buttons; the second is a higher pitched tone related to the categories icons; the third is a contemplative track that plays in the last interface to create a more immersive and collective experience. <br>
+There are three kinds of sounds. The first one is a short sound effect for all the buttons; the second one is a higher pitched tone related to the categories icons; the third one is a contemplative track that plays in the last interface to create a more immersive and collective experience. <br>
 
 ## Coding challenges
-One of the challenges was creating a star function connected with sliders that control the number of points and the inner and outer radius to customize the star.
+One of the coding challenges was creating a "star function" connected with sliders that control the number of points and the inner and outer radius to customize the star.
 
 ```javascript
 //nPointedStar customized with sliders
@@ -128,7 +126,7 @@ function nPointedStar(x, y, n, outerRadius, innerRadius) {
   endShape(CLOSE);
 }
 ```
-The most challenging part was to organize the structure of the message for the client. At first we could only make visible to the client the point(data.x, data.y), but we eventually managed to show also the line(data.x, data.y, data.x2, data.y2) that create the constellation by writing a double cycle message.
+The most challenging part was to organize the structure of the message for the client. At first we could only make visible the point(data.x, data.y) to the client, but we eventually managed to show also the line(data.x, data.y, data.x2, data.y2) that creates the constellation by writing a double cycle message.
 
 ```javascript
 //Interaction between users
@@ -201,7 +199,7 @@ The main inspirations for De-siderium, graphic-wise, were these two projects. <b
 
 ## Credits
 [P5js](https://p5js.org/) -
-P5 JavaScript library was used to develop the WebApp <br>
+P5 JavaScript library was used to develop the WebApp. <br>
 
 [P5.sound](https://p5js.org/reference/#/libraries/p5.sound) -
 The p5.sound library allowed to add sound effects to the project. <br>
@@ -216,10 +214,11 @@ Freesound is the source for the sound effects used for the buttons. <br>
 Google Fonts is the source for the fonts used in the project. <br>
 
 [Heroku](https://www.heroku.com/) -
-The cloud platform we used to publish the website, through GitHub. <br>
+Heroku is the cloud platform we used to publish the website, through GitHub. <br>
 
 ## Video demo
-[Video demo](https://drive.google.com/file/d/13u6w05VsdSseEWKRtU0yNKFHseeW7-By/view?usp=sharing) <br>
+[Video demo](https://drive.google.com/file/d/13u6w05VsdSseEWKRtU0yNKFHseeW7-By/view?usp=sharing) <br> -
+Here you can find a demo of the use of the WebApp.
 
 ## Team members
 <p align="center">

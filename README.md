@@ -19,11 +19,10 @@ Be sure to have node installed: https://nodejs.org/
   1a. [Goals](#goals) <br>
   1b. [Context of use and device](#context-of-use-and-device) <br>
 2. [Architecture](#architecture) <br>
-3. [Design](#design) <br>
+3. [Design challenges](#design-challenges) <br>
   3a. [Graphic aspects](#graphic-aspects) <br>
   3b. [Sound aspects](#sound-aspects) <br>
   3c. [Interaction](#interaction) <br>
-  3d. [Design challenges](#design-challenges) <br>
 4. [Coding challenges](#coding-challenges) <br>
 5. [References](#references) <br>
 6. [Credits](#credits) <br>
@@ -45,6 +44,48 @@ The aim of the project is to create a collaborative experience where people can 
 The goal is to make people able to wish what they want to reach in 2021, giving them a good omen and hope. The tradition says that a wish will never come true if it will be said out loud. So the users have to define their desires and define within one of the twelve categories proposed. After the choice the users will read an auspicious message related to their wishes and can customize the star that appears on the screen. At the end everyone will arrive in a sky full of stars where people can interact by creating constellations in the part of the sky where their category is placed. The will is to make people reflect about the sense of community that unifies us, focusing on the idea that the wishes generally expressed have something in common. <br>
 
 ### Context of use and device
-The project is designed to be used every time someone reflects on a personal achievement and wants to visualize it in a metaphorical way. To be more easily accessible and enjoyable the app is developed for mobile devices.
+The project is designed to be used every time someone reflects on a personal achievement and wants to visualize it in a metaphorical way. To be more easily accessible and enjoyable the app is developed for mobile devices. <br>
 
 ## Architecture
+<p align="center">
+  <img src="images/architecture.png" width="700" />
+</p>
+
+## Design challenges
+<p align="center">
+  <img src="images/symbols.png" width="700" />
+</p>
+
+The design choice reflects a simple and essential mood to create a relaxing and meditative ambient that reminds a night sky. Moreover, the design is intuitive to create an easy user experience. <br>
+
+### Graphic aspects
+<p align="center">
+  <img src="images/colors.png" width="700" />
+</p>
+
+The most used colors in the whole app are two shades of blue and white. The other colors are related to the twelve categories and they define the customized stars. The categories which have a similar meaning have different intensity shades of the same color.
+
+<p align="center">
+  <img src="images/fonts.png" width="700" />
+</p>
+
+There are two fonts that has different usages. "Prata" is used for the logo, the all titles and the meaningful messages. "Roboto mono" instead defines all the others secondary texts, such as buttons and instructions for the user. <br>
+
+### Sound aspects
+There are three kinds of sounds. The first is a short sound effect for all the buttons; the second is a higher pitched tone related to the categories icons; the third is a contemplative track that plays in the last interface to create a more immersive and collective experience. <br>
+
+### Interaction
+The interaction between users takes place in the last page, a virtual collective space where people can simultaneously draw the constellations in their specific category in white color. The users can also see others creations in light blue. <br>
+
+## Coding challenges
+
+## References
+
+## Credits
+
+## Team members
+<p align="center">
+  <img src="images/team.png" width="700" />
+</p>
+
+## Course

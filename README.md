@@ -10,7 +10,7 @@ Be sure to have node installed: https://nodejs.org/
 
 
 <p align="center">
-  <img src="images/logo.gif" width="700" />
+  <img src="images/logo.gif" width="400" />
 </p>
 
 ### Table of Contents
@@ -90,5 +90,5 @@ The interaction between users takes place in the last page, a virtual collective
 
 ## Course
 [Creative Coding 2020/2021](https://drawwithcode.github.io/2020/) <br>
-**Politecnico di Milano** - Scuola del Design <br>
+**Politecnico di Milano** - Scuola del Design - Communication Design <br>
 **Faculty:** Michele Mauri, Andrea Benedetti, Tommaso Elli <br>

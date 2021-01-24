@@ -128,7 +128,7 @@ There are three kinds of sounds. The first is a short sound effect for all the b
 ## Credits
 
 ## Video demo
-[Video demo](https://drive.google.com/drive/recent) <br>
+[Video demo](https://drive.google.com/file/d/13u6w05VsdSseEWKRtU0yNKFHseeW7-By/view?usp=sharing) <br>
 
 ## Team members
 <p align="center">

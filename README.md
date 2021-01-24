@@ -28,7 +28,6 @@ Be sure to have node installed: https://nodejs.org/
 3. [Design challenges](#design-challenges) <br>
   3a. [Graphic aspects](#graphic-aspects) <br>
   3b. [Sound aspects](#sound-aspects) <br>
-  3c. [Interaction](#interaction) <br>
 4. [Coding challenges](#coding-challenges) <br>
 5. [References](#references) <br>
 6. [Credits](#credits) <br>
@@ -92,14 +91,12 @@ Here the twelve symbols represent the common traits of the users’ wishes. The 
 </p>
 
 ### Interactive experience
-<p align="left">
-  <img src="images/interaction1.gif" width="200" />
+<p float="left" align="center">
+   <img src="images/interaction1.gif" width="200">     
+   <img src="images/interaction2.gif" width="200">
 </p>
 
-<p align="right">
-  <img src="images/interaction2.gif" width="200" />
-</p>
-
+The interaction between users takes place in the last page, a virtual collective space where people can simultaneously draw the constellations in their specific category in white color. The users can also see others creations in light blue. <br>
 
 ## Design challenges
 <p align="center">
@@ -124,9 +121,6 @@ There are two fonts that has different usages. "Prata" is used for the logo, the
 ### Sound aspects
 There are three kinds of sounds. The first is a short sound effect for all the buttons; the second is a higher pitched tone related to the categories icons; the third is a contemplative track that plays in the last interface to create a more immersive and collective experience. <br>
 
-### Interaction
-The interaction between users takes place in the last page, a virtual collective space where people can simultaneously draw the constellations in their specific category in white color. The users can also see others creations in light blue. <br>
-
 ## Coding challenges
 
 ## References
@@ -134,9 +128,7 @@ The interaction between users takes place in the last page, a virtual collective
 ## Credits
 
 ## Video demo
-<p align="center">
-  <img src="images/videodemo.mp4" width="700" />
-</p>
+[Video demo](https://drive.google.com/drive/recent) <br>
 
 ## Team members
 <p align="center">

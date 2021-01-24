@@ -89,3 +89,6 @@ The interaction between users takes place in the last page, a virtual collective
 </p>
 
 ## Course
+[Creative Coding 2020/2021](https://drawwithcode.github.io/2020/) <br>
+**Politecnico di Milano** - Scuola del Design <br>
+**Faculty:** Michele Mauri, Andrea Benedetti, Tommaso Elli <br>

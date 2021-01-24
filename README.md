@@ -124,6 +124,87 @@ There are two fonts that has different usages. "Prata" is used for the logo, the
 There are three kinds of sounds. The first is a short sound effect for all the buttons; the second is a higher pitched tone related to the categories icons; the third is a contemplative track that plays in the last interface to create a more immersive and collective experience. <br>
 
 ## Coding challenges
+One of the challenges was creating a star function connected with sliders that control the number of points and the inner and outer radius to customize the star.
+
+```javascript
+//nPointedStar customized with sliders
+function nPointedStar(x, y, n, outerRadius, innerRadius) {
+  let theta = TAU / n;
+  beginShape();
+
+  for (let i = 0; i < n; i++) {
+    vertex(x + cos(i * theta) * outerRadius, y + sin(i * theta) * outerRadius);
+    vertex(x + cos((i + 0.5) * theta) * innerRadius, y + sin((i + 0.5) * theta) * innerRadius);
+  }
+
+  endShape(CLOSE);
+}
+```
+The most challenging part was to organize the structure of the message for the client. At first we could only make visible to the client the point(data.x, data.y), but we eventually managed to show also the line(data.x, data.y, data.x2, data.y2) that create the constellation by writing a double cycle message.
+
+```javascript
+//Interaction between users
+function otherMouse(data) {
+  console.log("received:", data);
+
+  push();
+  strokeWeight(4);
+  stroke(93, 133, 213);
+  point(data.x, data.y);
+  pop();
+
+  push();
+  strokeWeight(0.5);
+  stroke(93, 133, 213);
+  line(data.x, data.y, data.x2, data.y2);
+  pop();
+
+}
+
+function mouseClicked() {
+  console.log("sending: ", currX, currY, prevX, prevY);
+
+  currX = mouseX;
+  currY = mouseY;
+
+  push();
+  strokeWeight(4);
+  stroke(255);
+  point(currX, currY);
+  pop();
+
+  strokeWeight(0.5);
+  stroke(255);
+
+  var message;
+
+  if (prevX == -1) {
+    line(currX, currY, currX, currY);
+
+    let message = {
+      x: currX,
+      y: currY,
+      x2: currX,
+      y2: currY,
+    };
+  } else {
+    line(currX, currY, prevX, prevY);
+
+    let message = {
+      x: currX,
+      y: currY,
+      x2: prevX,
+      y2: prevY,
+    };
+
+    socket.emit("mouse", message);
+  }
+
+  prevX = currX;
+  prevY = currY;
+
+}
+```
 
 ## References
 [Co--Star Astrology App](https://www.costarastrology.com/) &

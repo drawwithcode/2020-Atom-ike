@@ -21,8 +21,8 @@ Be sure to have node installed: https://nodejs.org/
 2. [Architecture](#architecture) <br>
   2a. [Main page](#main-page) <br>
   2b. [Welcome page](#welcome-page) <br>
-  2c. [Cards](#cards) <br>
-  2d. [Chosen card](#chosen-card) <br>
+  2c. ["Cards" page](#cards-page) <br>
+  2d. [Chosen card page](#chosen-card-page) <br>
   2e. [Transitioning page](#transitioning-page) <br>
   2f. [Interactive experience](#interactive-experience) <br>
 3. [Design challenges](#design-challenges) <br>
@@ -69,15 +69,21 @@ The first interface that appears when a user access to the app is made from: the
   <img src="images/2-mockup.png" width="700" />
 </p>
 
-### Cards
+In this page, a typewriter message comes up explaining some informations about the project. A button, in the lower part of the screen, allows to enter the next page. <br>
+
+### "Cards" page
 <p align="center">
   <img src="images/3-mockup.png" width="700" />
 </p>
 
-### Chosen card
+Here the twelve symbols represent the common traits of the users’ wishes. The desire won’t be written, but just symbolized by an icon, following the tradition of keeping secret your wish to make it come true. Each card is a button that allows to go ahead in the next step and the user has to choose one of them. <br>
+
+### Chosen card page
 <p align="center">
-  <img src="images/4-mockup.png" width="700" />
+  <img src="images/sliders.gif" width="700" />
 </p>
+
+ Each symbol of the previous page reveals a meaningful message for the user depending on the category chosen. In this page everyone can customize their own star by moving three sliders to change the number of points and the inner and outer radius. In the lower part of the screen there are three buttons: "BACK" allows to go back to the "Cards" page, "SAVE" enables the download of a .png file of the customized card to always remind you your goals, "DONE" gives you the access to the following page. <br>
 
 ### Transitioning page
 <p align="center">
@@ -86,8 +92,13 @@ The first interface that appears when a user access to the app is made from: the
 
 ### Interactive experience
 <p align="center">
-  <img src="images/6-mockup.png" width="700" />
+  <img src="images/interaction1.gif" width="700" />
 </p>
+
+<p align="center">
+  <img src="images/interaction2.gif" width="700" />
+</p>
+
 
 ## Design challenges
 <p align="center">

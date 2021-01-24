@@ -217,8 +217,8 @@ Google Fonts is the source for the fonts used in the project. <br>
 Heroku is the cloud platform we used to publish the website, through GitHub. <br>
 
 ## Video demo
-[Video demo](https://drive.google.com/file/d/13u6w05VsdSseEWKRtU0yNKFHseeW7-By/view?usp=sharing) <br> -
-Here you can find a demo of the use of the WebApp.
+[Video demo](https://drive.google.com/file/d/13u6w05VsdSseEWKRtU0yNKFHseeW7-By/view?usp=sharing) -
+Here you can find a demo of the use of the WebApp. <br>
 
 ## Team members
 <p align="center">

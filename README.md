@@ -10,7 +10,7 @@ Be sure to have node installed: https://nodejs.org/
 
 
 <p align="center">
-  <img src="images/logo.gif" width="400" />
+  <img src="images/logo.gif" width="700" />
 </p>
 
 ### Table of Contents
@@ -19,6 +19,12 @@ Be sure to have node installed: https://nodejs.org/
   1a. [Goals](#goals) <br>
   1b. [Context of use and device](#context-of-use-and-device) <br>
 2. [Architecture](#architecture) <br>
+  2a. [Main page](#main-page) <br>
+  2b. [Welcome page](#welcome-page) <br>
+  2c. [Cards](#cards) <br>
+  2d. [Chosen card](#chosen-card) <br>
+  2e. [Transitioning page](#transitioning-page) <br>
+  2f. [Interactive experience](#interactive-experience) <br>
 3. [Design challenges](#design-challenges) <br>
   3a. [Graphic aspects](#graphic-aspects) <br>
   3b. [Sound aspects](#sound-aspects) <br>
@@ -49,6 +55,38 @@ The project is designed to be used every time someone reflects on a personal ach
 ## Architecture
 <p align="center">
   <img src="images/architecture.png" width="700" />
+</p>
+
+### Main page
+<p align="center">
+  <img src="images/1-mockup.png" width="700" />
+</p>
+
+The first interface that appears when a user access to the app is made from: the title of the project, “De-siderium”, placed in the middle of the page; a star’s animation, above the title; a generative background composed by a night sky and a shooting stars; a button, in the lower part of the screen, which allows to enter the next page. <br>
+
+### Welcome page
+<p align="center">
+  <img src="images/2-mockup.png" width="700" />
+</p>
+
+### Cards
+<p align="center">
+  <img src="images/3-mockup.png" width="700" />
+</p>
+
+### Chosen card
+<p align="center">
+  <img src="images/4-mockup.png" width="700" />
+</p>
+
+### Transitioning page
+<p align="center">
+  <img src="images/5-mockup.png" width="700" />
+</p>
+
+### Interactive experience
+<p align="center">
+  <img src="images/6-mockup.png" width="700" />
 </p>
 
 ## Design challenges
